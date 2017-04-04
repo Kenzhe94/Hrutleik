@@ -16,5 +16,10 @@ namespace Hrutleik
         {
             InitializeComponent();
         }
+        int players = 0;
+        private void btStart_Click(object sender, EventArgs e)
+        {
+            players = Convert.ToInt32(tbPlayers.Text);
+        }
     }
 }
