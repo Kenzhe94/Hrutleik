@@ -57,6 +57,7 @@
             this.btStart.TabIndex = 2;
             this.btStart.Text = "Byrja";
             this.btStart.UseVisualStyleBackColor = true;
+            this.btStart.Click += new System.EventHandler(this.btStart_Click);
             // 
             // Form1
             // 
