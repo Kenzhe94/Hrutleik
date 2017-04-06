@@ -13,6 +13,7 @@ namespace Hrutleik
     public partial class Form1 : Form
     {
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
+        
         public Form1()
         {
             InitializeComponent();
@@ -26,10 +27,11 @@ namespace Hrutleik
                 MessageBox.Show(ex.ToString());
             }
         }
-        int players = 0;
         private void btStart_Click(object sender, EventArgs e)
         {
-            players = Convert.ToInt32(tbPlayers.Text);
+            Leikur leik = new Leikur(Convert.ToInt32(tbPlayers.Text));
+            this.Hide();
+            leik.Show();
         }
     }
 }
