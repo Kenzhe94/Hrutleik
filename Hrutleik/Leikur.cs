@@ -12,9 +12,16 @@ namespace Hrutleik
 {
     public partial class Leikur : Form
     {
-        public Leikur()
+        int playercount = 0;
+        public Leikur(int tempPLayer)
         {
+            playercount = tempPLayer;
             InitializeComponent();
+        }
+
+        private void Leikur_Load(object sender, EventArgs e)
+        {
+            label1.Text = playercount.ToString();
         }
     }
 }
