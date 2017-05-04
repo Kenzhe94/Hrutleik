@@ -23,5 +23,10 @@ namespace Hrutleik
         {
             label1.Text = playercount.ToString();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
