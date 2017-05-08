@@ -66,9 +66,60 @@
             // 
             // Spil
             // 
-            this.Spil.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.Spil.ImageSize = new System.Drawing.Size(255, 255);
+            this.Spil.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Spil.ImageStream")));
             this.Spil.TransparentColor = System.Drawing.Color.Transparent;
+            this.Spil.Images.SetKeyName(0, "1_hjarta.PNG");
+            this.Spil.Images.SetKeyName(1, "1_lauf.PNG");
+            this.Spil.Images.SetKeyName(2, "1_spadi.PNG");
+            this.Spil.Images.SetKeyName(3, "1_tígul.PNG");
+            this.Spil.Images.SetKeyName(4, "2_hjarta.PNG");
+            this.Spil.Images.SetKeyName(5, "2_lauf.PNG");
+            this.Spil.Images.SetKeyName(6, "2_spadi.PNG");
+            this.Spil.Images.SetKeyName(7, "2_tígul.PNG");
+            this.Spil.Images.SetKeyName(8, "3_hjarta.PNG");
+            this.Spil.Images.SetKeyName(9, "3_lauf.PNG");
+            this.Spil.Images.SetKeyName(10, "3_spadi.PNG");
+            this.Spil.Images.SetKeyName(11, "3_tígul.PNG");
+            this.Spil.Images.SetKeyName(12, "4_hjarta.PNG");
+            this.Spil.Images.SetKeyName(13, "4_lauf.PNG");
+            this.Spil.Images.SetKeyName(14, "4_spadi.PNG");
+            this.Spil.Images.SetKeyName(15, "4_tígul.PNG");
+            this.Spil.Images.SetKeyName(16, "5_hjarta.PNG");
+            this.Spil.Images.SetKeyName(17, "5_lauf.PNG");
+            this.Spil.Images.SetKeyName(18, "5_spadi.PNG");
+            this.Spil.Images.SetKeyName(19, "5_tígul.PNG");
+            this.Spil.Images.SetKeyName(20, "6_hjarta.PNG");
+            this.Spil.Images.SetKeyName(21, "6_lauf.PNG");
+            this.Spil.Images.SetKeyName(22, "6_spadi.PNG");
+            this.Spil.Images.SetKeyName(23, "6_tígul.PNG");
+            this.Spil.Images.SetKeyName(24, "7_hjarta.PNG");
+            this.Spil.Images.SetKeyName(25, "7_lauf.PNG");
+            this.Spil.Images.SetKeyName(26, "7_spadi.PNG");
+            this.Spil.Images.SetKeyName(27, "7_tígul.PNG");
+            this.Spil.Images.SetKeyName(28, "8_hjarta.PNG");
+            this.Spil.Images.SetKeyName(29, "8_lauf.PNG");
+            this.Spil.Images.SetKeyName(30, "8_spadi.PNG");
+            this.Spil.Images.SetKeyName(31, "8_tígul.PNG");
+            this.Spil.Images.SetKeyName(32, "9_hjarta.PNG");
+            this.Spil.Images.SetKeyName(33, "9_lauf.PNG");
+            this.Spil.Images.SetKeyName(34, "9_spadi.PNG");
+            this.Spil.Images.SetKeyName(35, "9_tígul.PNG");
+            this.Spil.Images.SetKeyName(36, "10_hjarta.PNG");
+            this.Spil.Images.SetKeyName(37, "10_lauf.PNG");
+            this.Spil.Images.SetKeyName(38, "10_spadi.PNG");
+            this.Spil.Images.SetKeyName(39, "10_tígul.PNG");
+            this.Spil.Images.SetKeyName(40, "J_Hjarta.PNG");
+            this.Spil.Images.SetKeyName(41, "j_lauf.PNG");
+            this.Spil.Images.SetKeyName(42, "j_spadi.PNG");
+            this.Spil.Images.SetKeyName(43, "j_tígul.PNG");
+            this.Spil.Images.SetKeyName(44, "Q_hjarta.PNG");
+            this.Spil.Images.SetKeyName(45, "q_lauf.PNG");
+            this.Spil.Images.SetKeyName(46, "q_spadi.PNG");
+            this.Spil.Images.SetKeyName(47, "Q_tígul.PNG");
+            this.Spil.Images.SetKeyName(48, "K_Hjarta.PNG");
+            this.Spil.Images.SetKeyName(49, "k_lauf.PNG");
+            this.Spil.Images.SetKeyName(50, "k_spadi.PNG");
+            this.Spil.Images.SetKeyName(51, "k_tígul.PNG");
             // 
             // panel2
             // 

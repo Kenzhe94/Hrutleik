@@ -55,5 +55,27 @@ namespace Hrutleik
                 throw ex;
             }
         }
+        public List<string> LesariSQL(string Quar)
+        {
+            List<string> data = new List<string>();
+            string lina = null;
+            if (OpenConnection() == true)
+            {
+                nySQLskipun = new MySqlCommand(Quar, sqltenging);
+                sqllesari = nySQLskipun.ExecuteReader();
+                while (sqllesari.Read())
+                {
+                    for (int i = 0; i < sqllesari.FieldCount; i++)
+                    {
+                        lina += (sqllesari.GetValue(i).ToString()) + ":";
+                    }
+                    data.Add(lina);
+                    lina = null;
+                }
+                CloseConnection();
+                return data;
+            }
+            return data;
+        }
     }
 }
