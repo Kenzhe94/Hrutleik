@@ -161,7 +161,7 @@ namespace Hrutleik
                 //listBox2.DataSource = LeikurTolvan;
             }
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
-            //pnlComputer.BackgroundImage = cards.Images[spilAI[0]];
+            panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
 
         private void Mjolkurlagni_Click(object sender, EventArgs e)
