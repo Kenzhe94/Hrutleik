@@ -44,6 +44,7 @@
             this.Frjosemi = new System.Windows.Forms.Button();
             this.Gerd = new System.Windows.Forms.Button();
             this.EinkunLaeris = new System.Windows.Forms.Button();
+            this.Start = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -229,11 +230,22 @@
             this.EinkunLaeris.TabIndex = 11;
             this.EinkunLaeris.UseVisualStyleBackColor = true;
             // 
+            // Start
+            // 
+            this.Start.Location = new System.Drawing.Point(299, 64);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(75, 33);
+            this.Start.TabIndex = 12;
+            this.Start.Text = "Byrja";
+            this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
+            // 
             // Leikur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 432);
+            this.Controls.Add(this.Start);
             this.Controls.Add(this.EinkunLaeris);
             this.Controls.Add(this.Gerd);
             this.Controls.Add(this.Frjosemi);
@@ -271,5 +283,6 @@
         private System.Windows.Forms.Button Frjosemi;
         private System.Windows.Forms.Button Gerd;
         private System.Windows.Forms.Button EinkunLaeris;
+        private System.Windows.Forms.Button Start;
     }
 }
