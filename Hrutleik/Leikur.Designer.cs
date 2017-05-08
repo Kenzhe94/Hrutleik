@@ -37,13 +37,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.thyngd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.Mjolkurlagni = new System.Windows.Forms.Button();
+            this.einkunnUllar = new System.Windows.Forms.Button();
+            this.FjoldiAfkvaema = new System.Windows.Forms.Button();
+            this.EinkunFyrirMalir = new System.Windows.Forms.Button();
+            this.Frjosemi = new System.Windows.Forms.Button();
+            this.Gerd = new System.Windows.Forms.Button();
+            this.EinkunLaeris = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -106,80 +106,89 @@
             this.thyngd.TabIndex = 4;
             this.thyngd.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Mjolkurlagni
             // 
-            this.button2.Location = new System.Drawing.Point(93, 320);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 66);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Mjolkurlagni.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Mjolkurlagni.BackgroundImage")));
+            this.Mjolkurlagni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Mjolkurlagni.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Mjolkurlagni.Location = new System.Drawing.Point(93, 320);
+            this.Mjolkurlagni.Name = "Mjolkurlagni";
+            this.Mjolkurlagni.Size = new System.Drawing.Size(75, 66);
+            this.Mjolkurlagni.TabIndex = 5;
+            this.Mjolkurlagni.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // einkunnUllar
             // 
-            this.button3.Location = new System.Drawing.Point(174, 320);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 66);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.einkunnUllar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("einkunnUllar.BackgroundImage")));
+            this.einkunnUllar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.einkunnUllar.Location = new System.Drawing.Point(174, 320);
+            this.einkunnUllar.Name = "einkunnUllar";
+            this.einkunnUllar.Size = new System.Drawing.Size(75, 66);
+            this.einkunnUllar.TabIndex = 6;
+            this.einkunnUllar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // FjoldiAfkvaema
             // 
-            this.button4.Location = new System.Drawing.Point(255, 320);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 66);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.FjoldiAfkvaema.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FjoldiAfkvaema.BackgroundImage")));
+            this.FjoldiAfkvaema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FjoldiAfkvaema.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FjoldiAfkvaema.Location = new System.Drawing.Point(255, 320);
+            this.FjoldiAfkvaema.Name = "FjoldiAfkvaema";
+            this.FjoldiAfkvaema.Size = new System.Drawing.Size(75, 66);
+            this.FjoldiAfkvaema.TabIndex = 7;
+            this.FjoldiAfkvaema.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // EinkunFyrirMalir
             // 
-            this.button5.Location = new System.Drawing.Point(336, 320);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 66);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.EinkunFyrirMalir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EinkunFyrirMalir.BackgroundImage")));
+            this.EinkunFyrirMalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.EinkunFyrirMalir.Location = new System.Drawing.Point(336, 320);
+            this.EinkunFyrirMalir.Name = "EinkunFyrirMalir";
+            this.EinkunFyrirMalir.Size = new System.Drawing.Size(75, 66);
+            this.EinkunFyrirMalir.TabIndex = 8;
+            this.EinkunFyrirMalir.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // Frjosemi
             // 
-            this.button6.Location = new System.Drawing.Point(417, 320);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 66);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Frjosemi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Frjosemi.BackgroundImage")));
+            this.Frjosemi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Frjosemi.Location = new System.Drawing.Point(417, 320);
+            this.Frjosemi.Name = "Frjosemi";
+            this.Frjosemi.Size = new System.Drawing.Size(75, 66);
+            this.Frjosemi.TabIndex = 9;
+            this.Frjosemi.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // Gerd
             // 
-            this.button7.Location = new System.Drawing.Point(498, 320);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 66);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Gerd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Gerd.BackgroundImage")));
+            this.Gerd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Gerd.Location = new System.Drawing.Point(498, 320);
+            this.Gerd.Name = "Gerd";
+            this.Gerd.Size = new System.Drawing.Size(75, 66);
+            this.Gerd.TabIndex = 10;
+            this.Gerd.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // EinkunLaeris
             // 
-            this.button8.Location = new System.Drawing.Point(579, 320);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 66);
-            this.button8.TabIndex = 11;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.EinkunLaeris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.EinkunLaeris.Location = new System.Drawing.Point(579, 320);
+            this.EinkunLaeris.Name = "EinkunLaeris";
+            this.EinkunLaeris.Size = new System.Drawing.Size(75, 66);
+            this.EinkunLaeris.TabIndex = 11;
+            this.EinkunLaeris.UseVisualStyleBackColor = true;
             // 
             // Leikur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 432);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.EinkunLaeris);
+            this.Controls.Add(this.Gerd);
+            this.Controls.Add(this.Frjosemi);
+            this.Controls.Add(this.EinkunFyrirMalir);
+            this.Controls.Add(this.FjoldiAfkvaema);
+            this.Controls.Add(this.einkunnUllar);
+            this.Controls.Add(this.Mjolkurlagni);
             this.Controls.Add(this.thyngd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -203,12 +212,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button thyngd;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button Mjolkurlagni;
+        private System.Windows.Forms.Button einkunnUllar;
+        private System.Windows.Forms.Button FjoldiAfkvaema;
+        private System.Windows.Forms.Button EinkunFyrirMalir;
+        private System.Windows.Forms.Button Frjosemi;
+        private System.Windows.Forms.Button Gerd;
+        private System.Windows.Forms.Button EinkunLaeris;
     }
 }
