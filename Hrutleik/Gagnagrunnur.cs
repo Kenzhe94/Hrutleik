@@ -23,7 +23,7 @@ namespace Hrutleik
         public void TengingVidGagnagrunn()
         {
             server = "10.200.10.24";
-            database = "0510942049_timaverkefni6";
+            database = "0112982819_hopaverk";
             uid = "0510942049";
             password = "mypassword";
 

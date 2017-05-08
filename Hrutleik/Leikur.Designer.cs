@@ -170,6 +170,7 @@
             // 
             // EinkunLaeris
             // 
+            this.EinkunLaeris.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EinkunLaeris.BackgroundImage")));
             this.EinkunLaeris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.EinkunLaeris.Location = new System.Drawing.Point(579, 320);
             this.EinkunLaeris.Name = "EinkunLaeris";
