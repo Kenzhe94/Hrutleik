@@ -157,6 +157,7 @@
             this.thyngd.Size = new System.Drawing.Size(75, 66);
             this.thyngd.TabIndex = 4;
             this.thyngd.UseVisualStyleBackColor = true;
+            this.thyngd.Click += new System.EventHandler(this.thyngd_Click);
             // 
             // Mjolkurlagni
             // 
@@ -168,6 +169,7 @@
             this.Mjolkurlagni.Size = new System.Drawing.Size(75, 66);
             this.Mjolkurlagni.TabIndex = 5;
             this.Mjolkurlagni.UseVisualStyleBackColor = true;
+            this.Mjolkurlagni.Click += new System.EventHandler(this.Mjolkurlagni_Click);
             // 
             // einkunnUllar
             // 
@@ -178,6 +180,7 @@
             this.einkunnUllar.Size = new System.Drawing.Size(75, 66);
             this.einkunnUllar.TabIndex = 6;
             this.einkunnUllar.UseVisualStyleBackColor = true;
+            this.einkunnUllar.Click += new System.EventHandler(this.einkunnUllar_Click);
             // 
             // FjoldiAfkvaema
             // 
@@ -189,6 +192,7 @@
             this.FjoldiAfkvaema.Size = new System.Drawing.Size(75, 66);
             this.FjoldiAfkvaema.TabIndex = 7;
             this.FjoldiAfkvaema.UseVisualStyleBackColor = true;
+            this.FjoldiAfkvaema.Click += new System.EventHandler(this.FjoldiAfkvaema_Click);
             // 
             // EinkunFyrirMalir
             // 
@@ -199,6 +203,7 @@
             this.EinkunFyrirMalir.Size = new System.Drawing.Size(75, 66);
             this.EinkunFyrirMalir.TabIndex = 8;
             this.EinkunFyrirMalir.UseVisualStyleBackColor = true;
+            this.EinkunFyrirMalir.Click += new System.EventHandler(this.EinkunFyrirMalir_Click);
             // 
             // Frjosemi
             // 
@@ -209,6 +214,7 @@
             this.Frjosemi.Size = new System.Drawing.Size(75, 66);
             this.Frjosemi.TabIndex = 9;
             this.Frjosemi.UseVisualStyleBackColor = true;
+            this.Frjosemi.Click += new System.EventHandler(this.Frjosemi_Click);
             // 
             // Gerd
             // 
@@ -219,6 +225,7 @@
             this.Gerd.Size = new System.Drawing.Size(75, 66);
             this.Gerd.TabIndex = 10;
             this.Gerd.UseVisualStyleBackColor = true;
+            this.Gerd.Click += new System.EventHandler(this.Gerd_Click);
             // 
             // EinkunLaeris
             // 
@@ -229,6 +236,7 @@
             this.EinkunLaeris.Size = new System.Drawing.Size(75, 66);
             this.EinkunLaeris.TabIndex = 11;
             this.EinkunLaeris.UseVisualStyleBackColor = true;
+            this.EinkunLaeris.Click += new System.EventHandler(this.EinkunLaeris_Click);
             // 
             // Start
             // 

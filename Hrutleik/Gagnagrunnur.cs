@@ -24,7 +24,7 @@ namespace Hrutleik
         {
             server = "10.200.10.24";
             database = "0112982819_hopaverk";
-            uid = "0510942049";
+            uid = "0112982819";
             password = "mypassword";
 
             tengistrengur = "server=" + server + ";userid=" + uid + ";password=" + password
