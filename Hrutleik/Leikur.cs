@@ -117,7 +117,7 @@ namespace Hrutleik
             {
                 MessageBox.Show(ex.ToString());
             }
-            MessageBox.Show("leikmaður er með " + arr[0] + " og tölva er með " + arr[1]);
+            MessageBox.Show("Spilari er með " + arr[0] + " og tölvan er með " + arr[1]);
 
             if (Convert.ToDouble(arr[0]) > Convert.ToDouble(arr[1]))
             {
@@ -205,11 +205,11 @@ namespace Hrutleik
             {
                 MessageBox.Show(ex.ToString());
             }
-            MessageBox.Show("leikmaður er með " + arr[0] + " og tölva er með " + arr[1]);
+            MessageBox.Show("Spilari er með " + arr[0] + " og tölvan er með " + arr[1]);
 
             if (Convert.ToDouble(arr[0]) > Convert.ToDouble(arr[1]))
             {
-                MessageBox.Show("þú vinnur í lífinu");
+                MessageBox.Show("þú vinnur");
 
                 LeikurLeikari.Add(LeikurTolvan[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
@@ -225,7 +225,7 @@ namespace Hrutleik
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
             {
-                MessageBox.Show("þú tapar í lífinu");
+                MessageBox.Show("þú tapar");
 
                 LeikurTolvan.Add(LeikurLeikari[0]);
                 LeikurLeikari.Remove(LeikurLeikari[0]);
@@ -239,7 +239,7 @@ namespace Hrutleik
             }
             else
             {
-                MessageBox.Show("Það er jafntefli tík");
+                MessageBox.Show("Það er jafntefli");
 
                 LeikurGeymari.Add(LeikurLeikari[0]);
                 LeikurGeymari.Add(LeikurTolvan[0]);
@@ -297,7 +297,7 @@ namespace Hrutleik
 
             if (Convert.ToDouble(arr[0]) > Convert.ToDouble(arr[1]))
             {
-                MessageBox.Show("þú vinnur í lífinu");
+                MessageBox.Show("þú vinnur");
 
                 LeikurLeikari.Add(LeikurTolvan[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
@@ -313,7 +313,7 @@ namespace Hrutleik
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
             {
-                MessageBox.Show("þú tapar í lífinu");
+                MessageBox.Show("þú tapar");
 
                 LeikurTolvan.Add(LeikurLeikari[0]);
                 LeikurLeikari.Remove(LeikurLeikari[0]);
@@ -327,7 +327,7 @@ namespace Hrutleik
             }
             else
             {
-                MessageBox.Show("Það er jafntefli tík");
+                MessageBox.Show("Það er jafntefli");
 
                 LeikurGeymari.Add(LeikurLeikari[0]);
                 LeikurGeymari.Add(LeikurTolvan[0]);
@@ -343,7 +343,90 @@ namespace Hrutleik
 
         private void FjoldiAfkvaema_Click(object sender, EventArgs e)
         {
+            //panel1.BackgroundImage = null;
+            tempPlayer = "SELECT * FROM hopverkefni WHERE id='" + LeikurLeikari[0] + "'";
+            List<string> lines = new List<string>();
 
+            string[] arr = new string[2];
+            try
+            {
+                lines = gagnagrunnur.LesariSQL(tempPlayer);
+
+                foreach (string lin in lines)
+                {
+                    string[] lineFromList = lin.Split(':');
+                    arr[0] = lineFromList[6];
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            tempAI = "SELECT * FROM hopverkefni WHERE id='" + LeikurTolvan[0] + "'";
+            List<string> lines2 = new List<string>();
+
+            try
+            {
+                lines2 = gagnagrunnur.LesariSQL(tempAI);
+
+                foreach (string lin in lines2)
+                {
+                    string[] lineFromList2 = lin.Split(':');
+                    arr[1] = lineFromList2[6];
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            MessageBox.Show("Spilari er með " + arr[0] + " og tölvan er með " + arr[1]);
+
+            if (Convert.ToDouble(arr[0]) > Convert.ToDouble(arr[1]))
+            {
+                MessageBox.Show("þú vinnur");
+
+                LeikurLeikari.Add(LeikurTolvan[0]);
+                LeikurTolvan.Remove(LeikurTolvan[0]);
+
+                if (LeikurGeymari.Count > 0)
+                {
+                    LeikurLeikari.AddRange(LeikurGeymari);
+                }
+
+                //listBox1.DataSource = LeikurLeikari;
+                //listBox2.DataSource = spilAI;
+
+            }
+            else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
+            {
+                MessageBox.Show("þú tapar");
+
+                LeikurTolvan.Add(LeikurLeikari[0]);
+                LeikurLeikari.Remove(LeikurLeikari[0]);
+                if (LeikurGeymari.Count > 0)
+                {
+                    LeikurTolvan.AddRange(LeikurGeymari);
+                }
+                //listBox1.DataSource = LeikurLeikari;
+                //listBox2.DataSource = spilAI;
+
+            }
+            else
+            {
+                MessageBox.Show("Það er jafntefli");
+
+                LeikurGeymari.Add(LeikurLeikari[0]);
+                LeikurGeymari.Add(LeikurTolvan[0]);
+                LeikurLeikari.Remove(LeikurLeikari[0]);
+                LeikurTolvan.Remove(LeikurTolvan[0]);
+
+                //listBox1.DataSource = LeikurLeikari;
+                //listBox2.DataSource = LeikurTolvan;
+            }
+            panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
+            //panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
 
         private void EinkunFyrirMalir_Click(object sender, EventArgs e)
