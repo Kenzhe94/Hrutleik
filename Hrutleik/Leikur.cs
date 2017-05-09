@@ -293,7 +293,7 @@ namespace Hrutleik
             {
                 MessageBox.Show(ex.ToString());
             }
-            MessageBox.Show("leikmaður er með " + arr[0] + " og tölva er með " + arr[1]);
+            MessageBox.Show("Spilari er með " + arr[0] + " og tölvan er með " + arr[1]);
 
             if (Convert.ToDouble(arr[0]) > Convert.ToDouble(arr[1]))
             {
