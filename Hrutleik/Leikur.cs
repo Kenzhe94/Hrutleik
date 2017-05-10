@@ -50,7 +50,7 @@ namespace Hrutleik
 
             for (int i = 0; i < 26; i++)
             {
-                temp = rand.Next(1, 53);
+                temp = rand.Next(0, 52);
                 if (!LeikurLeikari.Contains(temp))
                 {
                     LeikurLeikari.Add(temp);
@@ -62,7 +62,7 @@ namespace Hrutleik
             }
             for (int i = 0; i < 26; i++)
             {
-                temp = rand.Next(1, 53);
+                temp = rand.Next(0, 52);
                 if (!LeikurLeikari.Contains(temp) && !LeikurTolvan.Contains(temp))
                 {
                     LeikurTolvan.Add(temp);
@@ -133,8 +133,6 @@ namespace Hrutleik
                 }
                 panel1.Hide();
 
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -147,8 +145,7 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
+
 
             }
             else
@@ -160,10 +157,9 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
 
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
                 panel1.Hide();
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
             
@@ -223,8 +219,6 @@ namespace Hrutleik
                     LeikurLeikari.AddRange(LeikurGeymari);
                 }
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -237,8 +231,6 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else
@@ -250,9 +242,8 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -311,8 +302,6 @@ namespace Hrutleik
                     LeikurLeikari.AddRange(LeikurGeymari);
                 }
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -325,8 +314,6 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else
@@ -338,9 +325,8 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -399,8 +385,6 @@ namespace Hrutleik
                     LeikurLeikari.AddRange(LeikurGeymari);
                 }
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -413,8 +397,6 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else
@@ -426,9 +408,8 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -487,8 +468,6 @@ namespace Hrutleik
                     LeikurLeikari.AddRange(LeikurGeymari);
                 }
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -501,8 +480,6 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else
@@ -514,11 +491,10 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
-            //panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
+            panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
 
         private void Frjosemi_Click(object sender, EventArgs e)
@@ -575,8 +551,6 @@ namespace Hrutleik
                     LeikurLeikari.AddRange(LeikurGeymari);
                 }
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -589,8 +563,6 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else
@@ -602,9 +574,8 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -663,8 +634,6 @@ namespace Hrutleik
                     LeikurLeikari.AddRange(LeikurGeymari);
                 }
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -677,8 +646,6 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else
@@ -690,9 +657,8 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -751,8 +717,6 @@ namespace Hrutleik
                     LeikurLeikari.AddRange(LeikurGeymari);
                 }
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else if (Convert.ToDouble(arr[0]) < Convert.ToDouble(arr[1]))
@@ -765,8 +729,6 @@ namespace Hrutleik
                 {
                     LeikurTolvan.AddRange(LeikurGeymari);
                 }
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = spilAI;
 
             }
             else
@@ -778,11 +740,31 @@ namespace Hrutleik
                 LeikurLeikari.Remove(LeikurLeikari[0]);
                 LeikurTolvan.Remove(LeikurTolvan[0]);
                 panel1.Hide();
-                //listBox1.DataSource = LeikurLeikari;
-                //listBox2.DataSource = LeikurTolvan;
             }
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
+        }
+
+        private void tBreset ()
+        {
+            tbSpilari.Clear();
+            tbTolvan.Clear();
+            tbSpilari.Text = "Stókk spilari: " + LeikurLeikari.Count();
+            tbTolvan.Text = "Stókk Tolvan: " + LeikurTolvan.Count();
+        }
+        private void check()
+        {
+            if (LeikurLeikari.Count() == 0)
+	        {
+                MessageBox.Show("Þu vanst!");
+                Application.Exit();
+	        }
+            else if (LeikurTolvan.Count() == 0)
+            {
+                MessageBox.Show("Tolvan vann");
+                Application.Exit();
+            }
         }
     }
 }

@@ -45,6 +45,8 @@
             this.Gerd = new System.Windows.Forms.Button();
             this.EinkunLaeris = new System.Windows.Forms.Button();
             this.Start = new System.Windows.Forms.Button();
+            this.tbTolvan = new System.Windows.Forms.TextBox();
+            this.tbSpilari = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -248,11 +250,27 @@
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
+            // tbTolvan
+            // 
+            this.tbTolvan.Location = new System.Drawing.Point(91, 276);
+            this.tbTolvan.Name = "tbTolvan";
+            this.tbTolvan.Size = new System.Drawing.Size(117, 20);
+            this.tbTolvan.TabIndex = 13;
+            // 
+            // tbSpilari
+            // 
+            this.tbSpilari.Location = new System.Drawing.Point(464, 276);
+            this.tbSpilari.Name = "tbSpilari";
+            this.tbSpilari.Size = new System.Drawing.Size(117, 20);
+            this.tbSpilari.TabIndex = 14;
+            // 
             // Leikur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 432);
+            this.Controls.Add(this.tbSpilari);
+            this.Controls.Add(this.tbTolvan);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.EinkunLaeris);
             this.Controls.Add(this.Gerd);
@@ -292,5 +310,7 @@
         private System.Windows.Forms.Button Gerd;
         private System.Windows.Forms.Button EinkunLaeris;
         private System.Windows.Forms.Button Start;
+        private System.Windows.Forms.TextBox tbTolvan;
+        private System.Windows.Forms.TextBox tbSpilari;
     }
 }
