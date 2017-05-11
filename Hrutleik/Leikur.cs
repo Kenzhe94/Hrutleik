@@ -37,6 +37,7 @@ namespace Hrutleik
         private void Leikur_Load(object sender, EventArgs e)
         {
             label1.Text = playercount.ToString();
+            Disable();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,11 +45,11 @@ namespace Hrutleik
 
         }
 
-        private void Start_Click(object sender, EventArgs e)
+        private void Start_Click(object sender, EventArgs e) //Stokkar spilin í 2 stokka
         {
             int temp = 0;
 
-            for (int i = 0; i < 26; i++)
+            for (int i = 0; i < 26; i++)//gefur spilarinn 26 spil, sem eru nú þegar ekki til.
             {
                 temp = rand.Next(0, 52);
                 if (!LeikurLeikari.Contains(temp))
@@ -60,7 +61,7 @@ namespace Hrutleik
                     i--;
                 }
             }
-            for (int i = 0; i < 26; i++)
+            for (int i = 0; i < 26; i++)//gefur tolvan 26 spil, sem eru nú þegar ekki til.
             {
                 temp = rand.Next(0, 52);
                 if (!LeikurLeikari.Contains(temp) && !LeikurTolvan.Contains(temp))
@@ -72,15 +73,18 @@ namespace Hrutleik
                     i--;
                 }
             }
+            enable();
+            tBreset();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             Start.Enabled = false;
             
         }
-        string tempPlayer, tempAI = null;
+        string tempPlayer, tempAI = null; //geri temp string fyrir spilari og tolvan. til að geyma
+        //þyngd 
         private void thyngd_Click(object sender, EventArgs e)
         {
             panel1.Show();
-            tempPlayer = "SELECT * FROM hopverkefni WHERE id='" + LeikurLeikari[0] + "'";
+            tempPlayer = "SELECT * FROM hopverkefni WHERE id='" + LeikurLeikari[0] + "'"; //tekur fyrsta spilið sem á ofan öllu.
             List<string> lines = new List<string>();
 
             string[] arr = new string[2];
@@ -756,6 +760,8 @@ namespace Hrutleik
 
         private void tBreset ()
         {
+            tbSpilari.Enabled = false;
+            tbTolvan.Enabled = false;
             tbSpilari.Clear();
             tbTolvan.Clear();
             tbSpilari.Text = "Stókk spilari: " + LeikurLeikari.Count();
@@ -773,6 +779,28 @@ namespace Hrutleik
                 MessageBox.Show("Tolvan vann");
                 Application.Exit();
             }
+        }
+        private void Disable()
+        {
+            thyngd.Enabled = false;
+            Mjolkurlagni.Enabled = false;
+            einkunnUllar.Enabled = false;
+            FjoldiAfkvaema.Enabled = false;
+            EinkunFyrirMalir.Enabled = false;
+            Frjosemi.Enabled = false;
+            Gerd.Enabled = false;
+            EinkunLaeris.Enabled = false;
+        }
+        private void enable()
+        {
+            thyngd.Enabled = true;
+            Mjolkurlagni.Enabled = true;
+            einkunnUllar.Enabled = true;
+            FjoldiAfkvaema.Enabled = true;
+            EinkunFyrirMalir.Enabled = true;
+            Frjosemi.Enabled = true;
+            Gerd.Enabled = true;
+            EinkunLaeris.Enabled = true;
         }
     }
 }
