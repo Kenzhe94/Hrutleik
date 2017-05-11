@@ -160,6 +160,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
             
@@ -244,6 +245,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -327,6 +329,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -410,6 +413,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -493,6 +497,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -576,6 +581,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -659,6 +665,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -742,6 +749,7 @@ namespace Hrutleik
                 panel1.Hide();
             }
             tBreset();
+            check();
             panel2.BackgroundImage = Spil.Images[LeikurLeikari[0]];
             panel1.BackgroundImage = Spil.Images[LeikurTolvan[0]];
         }
@@ -753,7 +761,7 @@ namespace Hrutleik
             tbSpilari.Text = "Stókk spilari: " + LeikurLeikari.Count();
             tbTolvan.Text = "Stókk Tolvan: " + LeikurTolvan.Count();
         }
-        private void check()
+        private void check ()
         {
             if (LeikurLeikari.Count() == 0)
 	        {
